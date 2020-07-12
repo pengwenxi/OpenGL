@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		226A9DDB24BA042A007213CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226A9DDA24BA042A007213CB /* Assets.xcassets */; };
+		226A9DDE24BA042A007213CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226A9DDC24BA042A007213CB /* Main.storyboard */; };
+		226A9DEC24BA042B007213CB /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A9DEB24BA042B007213CB /* ____Tests.m */; };
+		226A9DF724BA042B007213CB /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A9DF624BA042B007213CB /* ____UITests.m */; };
+		226A9E0524BA0471007213CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 226A9E0424BA0471007213CB /* main.cpp */; };
+		226A9E0724BA0478007213CB /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 226A9E0624BA0478007213CB /* libGLTools.a */; };
+		226A9E1A24BA048B007213CB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226A9E1924BA048B007213CB /* OpenGL.framework */; };
+		226A9E1C24BA0491007213CB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226A9E1B24BA0491007213CB /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		226A9DE824BA042B007213CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226A9DC924BA0427007213CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226A9DD024BA0427007213CB;
+			remoteInfo = "混合颜色";
+		};
+		226A9DF324BA042B007213CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226A9DC924BA0427007213CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 226A9DD024BA0427007213CB;
+			remoteInfo = "混合颜色";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		226A9DD124BA0427007213CB /* 混合颜色.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "混合颜色.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226A9DDA24BA042A007213CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		226A9DDD24BA042A007213CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		226A9DDF24BA042A007213CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226A9DE224BA042A007213CB /* ____.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "____.entitlements"; sourceTree = "<group>"; };
+		226A9DE724BA042B007213CB /* 混合颜色Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "混合颜色Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226A9DEB24BA042B007213CB /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		226A9DED24BA042B007213CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226A9DF224BA042B007213CB /* 混合颜色UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "混合颜色UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226A9DF624BA042B007213CB /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		226A9DF824BA042B007213CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226A9E0424BA0471007213CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		226A9E0624BA0478007213CB /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		226A9E0924BA0480007213CB /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		226A9E0A24BA0480007213CB /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		226A9E0B24BA0480007213CB /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		226A9E0C24BA0480007213CB /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		226A9E0D24BA0480007213CB /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		226A9E0E24BA0480007213CB /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		226A9E0F24BA0480007213CB /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		226A9E1024BA0480007213CB /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		226A9E1124BA0480007213CB /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		226A9E1224BA0480007213CB /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		226A9E1424BA0480007213CB /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		226A9E1524BA0480007213CB /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		226A9E1624BA0480007213CB /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		226A9E1724BA0480007213CB /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		226A9E1924BA048B007213CB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		226A9E1B24BA0491007213CB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		226A9DCE24BA0427007213CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226A9E1C24BA0491007213CB /* GLUT.framework in Frameworks */,
+				226A9E1A24BA048B007213CB /* OpenGL.framework in Frameworks */,
+				226A9E0724BA0478007213CB /* libGLTools.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226A9DE424BA042B007213CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226A9DEF24BA042B007213CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226A9DC824BA0427007213CB = {
+			isa = PBXGroup;
+			children = (
+				226A9DD324BA0427007213CB /* 混合颜色 */,
+				226A9DEA24BA042B007213CB /* 混合颜色Tests */,
+				226A9DF524BA042B007213CB /* 混合颜色UITests */,
+				226A9DD224BA0427007213CB /* Products */,
+				226A9E1824BA048A007213CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		226A9DD224BA0427007213CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				226A9DD124BA0427007213CB /* 混合颜色.app */,
+				226A9DE724BA042B007213CB /* 混合颜色Tests.xctest */,
+				226A9DF224BA042B007213CB /* 混合颜色UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		226A9DD324BA0427007213CB /* 混合颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				226A9E0824BA0480007213CB /* include */,
+				226A9E0624BA0478007213CB /* libGLTools.a */,
+				226A9DDA24BA042A007213CB /* Assets.xcassets */,
+				226A9DDC24BA042A007213CB /* Main.storyboard */,
+				226A9DDF24BA042A007213CB /* Info.plist */,
+				226A9E0424BA0471007213CB /* main.cpp */,
+				226A9DE224BA042A007213CB /* ____.entitlements */,
+			);
+			path = "混合颜色";
+			sourceTree = "<group>";
+		};
+		226A9DEA24BA042B007213CB /* 混合颜色Tests */ = {
+			isa = PBXGroup;
+			children = (
+				226A9DEB24BA042B007213CB /* ____Tests.m */,
+				226A9DED24BA042B007213CB /* Info.plist */,
+			);
+			path = "混合颜色Tests";
+			sourceTree = "<group>";
+		};
+		226A9DF524BA042B007213CB /* 混合颜色UITests */ = {
+			isa = PBXGroup;
+			children = (
+				226A9DF624BA042B007213CB /* ____UITests.m */,
+				226A9DF824BA042B007213CB /* Info.plist */,
+			);
+			path = "混合颜色UITests";
+			sourceTree = "<group>";
+		};
+		226A9E0824BA0480007213CB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				226A9E0924BA0480007213CB /* GLBatchBase.h */,
+				226A9E0A24BA0480007213CB /* math3d.h */,
+				226A9E0B24BA0480007213CB /* GLTriangleBatch.h */,
+				226A9E0C24BA0480007213CB /* GLBatch.h */,
+				226A9E0D24BA0480007213CB /* GLMatrixStack.h */,
+				226A9E0E24BA0480007213CB /* GLFrame.h */,
+				226A9E0F24BA0480007213CB /* GLFrustum.h */,
+				226A9E1024BA0480007213CB /* GLGeometryTransform.h */,
+				226A9E1124BA0480007213CB /* GLShaderManager.h */,
+				226A9E1224BA0480007213CB /* StopWatch.h */,
+				226A9E1324BA0480007213CB /* GL */,
+				226A9E1724BA0480007213CB /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		226A9E1324BA0480007213CB /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				226A9E1424BA0480007213CB /* glxew.h */,
+				226A9E1524BA0480007213CB /* wglew.h */,
+				226A9E1624BA0480007213CB /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		226A9E1824BA048A007213CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				226A9E1B24BA0491007213CB /* GLUT.framework */,
+				226A9E1924BA048B007213CB /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		226A9DD024BA0427007213CB /* 混合颜色 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226A9DFB24BA042B007213CB /* Build configuration list for PBXNativeTarget "混合颜色" */;
+			buildPhases = (
+				226A9DCD24BA0427007213CB /* Sources */,
+				226A9DCE24BA0427007213CB /* Frameworks */,
+				226A9DCF24BA0427007213CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "混合颜色";
+			productName = "混合颜色";
+			productReference = 226A9DD124BA0427007213CB /* 混合颜色.app */;
+			productType = "com.apple.product-type.application";
+		};
+		226A9DE624BA042B007213CB /* 混合颜色Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226A9DFE24BA042B007213CB /* Build configuration list for PBXNativeTarget "混合颜色Tests" */;
+			buildPhases = (
+				226A9DE324BA042B007213CB /* Sources */,
+				226A9DE424BA042B007213CB /* Frameworks */,
+				226A9DE524BA042B007213CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226A9DE924BA042B007213CB /* PBXTargetDependency */,
+			);
+			name = "混合颜色Tests";
+			productName = "混合颜色Tests";
+			productReference = 226A9DE724BA042B007213CB /* 混合颜色Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		226A9DF124BA042B007213CB /* 混合颜色UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226A9E0124BA042B007213CB /* Build configuration list for PBXNativeTarget "混合颜色UITests" */;
+			buildPhases = (
+				226A9DEE24BA042B007213CB /* Sources */,
+				226A9DEF24BA042B007213CB /* Frameworks */,
+				226A9DF024BA042B007213CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				226A9DF424BA042B007213CB /* PBXTargetDependency */,
+			);
+			name = "混合颜色UITests";
+			productName = "混合颜色UITests";
+			productReference = 226A9DF224BA042B007213CB /* 混合颜色UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		226A9DC924BA0427007213CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "彭文喜";
+				TargetAttributes = {
+					226A9DD024BA0427007213CB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					226A9DE624BA042B007213CB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 226A9DD024BA0427007213CB;
+					};
+					226A9DF124BA042B007213CB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 226A9DD024BA0427007213CB;
+					};
+				};
+			};
+			buildConfigurationList = 226A9DCC24BA0427007213CB /* Build configuration list for PBXProject "混合颜色" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 226A9DC824BA0427007213CB;
+			productRefGroup = 226A9DD224BA0427007213CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				226A9DD024BA0427007213CB /* 混合颜色 */,
+				226A9DE624BA042B007213CB /* 混合颜色Tests */,
+				226A9DF124BA042B007213CB /* 混合颜色UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		226A9DCF24BA0427007213CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226A9DDB24BA042A007213CB /* Assets.xcassets in Resources */,
+				226A9DDE24BA042A007213CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226A9DE524BA042B007213CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226A9DF024BA042B007213CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		226A9DCD24BA0427007213CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226A9E0524BA0471007213CB /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226A9DE324BA042B007213CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226A9DEC24BA042B007213CB /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226A9DEE24BA042B007213CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226A9DF724BA042B007213CB /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		226A9DE924BA042B007213CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226A9DD024BA0427007213CB /* 混合颜色 */;
+			targetProxy = 226A9DE824BA042B007213CB /* PBXContainerItemProxy */;
+		};
+		226A9DF424BA042B007213CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 226A9DD024BA0427007213CB /* 混合颜色 */;
+			targetProxy = 226A9DF324BA042B007213CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		226A9DDC24BA042A007213CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226A9DDD24BA042A007213CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		226A9DF924BA042B007213CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		226A9DFA24BA042B007213CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		226A9DFC24BA042B007213CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "混合颜色/____.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "混合颜色/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/混合颜色",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenxi.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		226A9DFD24BA042B007213CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "混合颜色/____.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "混合颜色/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/混合颜色",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenxi.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		226A9DFF24BA042B007213CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "混合颜色Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenxi.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/混合颜色.app/Contents/MacOS/混合颜色";
+			};
+			name = Debug;
+		};
+		226A9E0024BA042B007213CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "混合颜色Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenxi.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/混合颜色.app/Contents/MacOS/混合颜色";
+			};
+			name = Release;
+		};
+		226A9E0224BA042B007213CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "混合颜色UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenxi.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "混合颜色";
+			};
+			name = Debug;
+		};
+		226A9E0324BA042B007213CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "混合颜色UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wenxi.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "混合颜色";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		226A9DCC24BA0427007213CB /* Build configuration list for PBXProject "混合颜色" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226A9DF924BA042B007213CB /* Debug */,
+				226A9DFA24BA042B007213CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226A9DFB24BA042B007213CB /* Build configuration list for PBXNativeTarget "混合颜色" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226A9DFC24BA042B007213CB /* Debug */,
+				226A9DFD24BA042B007213CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226A9DFE24BA042B007213CB /* Build configuration list for PBXNativeTarget "混合颜色Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226A9DFF24BA042B007213CB /* Debug */,
+				226A9E0024BA042B007213CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226A9E0124BA042B007213CB /* Build configuration list for PBXNativeTarget "混合颜色UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226A9E0224BA042B007213CB /* Debug */,
+				226A9E0324BA042B007213CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 226A9DC924BA0427007213CB /* Project object */;
+}
